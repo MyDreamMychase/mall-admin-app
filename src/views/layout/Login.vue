@@ -68,8 +68,10 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          api.login(this.loginFrom).then((resp) => {
-            console.log(resp);
+          api.login(this.loginFrom).then((res) => {
+            console.log(res);
+            // 保存用户信息
+            this.$store.dispatch('setUserInfo', res);
             this.$router.push({
               name: 'Home',
             });
