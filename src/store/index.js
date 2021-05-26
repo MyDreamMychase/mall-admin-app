@@ -17,7 +17,7 @@ export default new Vuex.Store({
     setUserInfo(state, userinfo) {
       state.user = userinfo;
     },
-    logout(state) {
+    logOut(state) {
       state.user = {
         username: '',
         appkey: '',
@@ -34,8 +34,8 @@ export default new Vuex.Store({
       commit('setUserInfo', userinfo);
       setCookie(userinfo);
     },
-    logout({ commit }) {
-      commit('logout');
+    logOut({ commit }) {
+      commit('logOut');
       removeUserCookie();
     },
   },
