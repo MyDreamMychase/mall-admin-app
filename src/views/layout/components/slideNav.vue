@@ -5,8 +5,8 @@
         </a-button>
         <div class="breadcumb">
             <a-breadcrumb>
-              <a-breadcrumb-item>Home</a-breadcrumb-item>
-              <a-breadcrumb-item><a href="">统计</a></a-breadcrumb-item>
+              <a-breadcrumb-item>商品</a-breadcrumb-item>
+              <a-breadcrumb-item><a href="">商品列表</a></a-breadcrumb-item>
             </a-breadcrumb>
         </div>
         <ul class="user-info">
