@@ -55,6 +55,7 @@ const routes = [
       hidden: false,
     },
     component: Home,
+    redirect: '/index',
     children: [{
       path: '/index',
       name: 'index',

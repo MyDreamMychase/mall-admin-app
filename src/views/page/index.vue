@@ -1,5 +1,17 @@
 <template>
-    <div>
-        统计
+    <div class="index">
+        <card></card>
+        <charts></charts>
     </div>
 </template>
+<script>
+import Card from '@/components/card.vue';
+import Charts from '@/components/charts.vue';
+
+export default {
+  components: {
+    Card,
+    Charts,
+  },
+};
+</script>
